@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #eef2ff, #ffffff);
+  text-align: center;
+}
+
+header {
+  padding: 30px;
+  background: #1e3a8a;
+  color: white;
+}
+
+.qr-section {
+  margin: 25px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px;
+}
+
+.node {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+}
+
+.unlocked {
+  background: #22c55e;
+  color: white;
+  box-shadow: 0 0 15px rgba(34,197,94,0.7);
+}
+
+.locked {
+  background: #9ca3af;
+  color: white;
+  filter: grayscale(100%);
+}
+
+.active {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.level-box {
+  background: white;
+  padding: 30px;
+  margin: auto;
+  max-width: 650px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.hidden { display: none; }
+
+.option {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 85%;
+  font-size: 16px;
+}
+
+.submit {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
