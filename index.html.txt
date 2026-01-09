@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <title>Udhëtimi i Fjalës Shqipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Udhëtimi i Fjalës Shqipe</h1>
+  <p>Një lojë digjitale për pasurimin e gjuhës shqipe</p>
+</header>
+
+<section id="map" class="map"></section>
+
+<section id="levelBox" class="level-box hidden">
+  <h2 id="levelTitle"></h2>
+  <div id="levelContent"></div>
+  <button class="submit" onclick="submitLevel()">Vazhdo</button>
+</section>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
