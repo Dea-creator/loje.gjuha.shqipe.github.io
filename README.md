@@ -1,1 +1,1 @@
-loje konkursi i gjuhs shqipe
+loje konkursi i gjuhes shqipe
